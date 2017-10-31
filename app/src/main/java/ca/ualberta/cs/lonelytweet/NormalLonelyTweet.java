@@ -14,12 +14,10 @@ public class NormalLonelyTweet extends LonelyTweet {
 
     @Override
     public boolean isValid() {
-		if (tweetBody.trim().length() == 0
-				|| tweetBody.trim().length() > 10) {
-			return false;
-		}
+		// FIX 1: Removed if statement to return expression value, for simplification.
+		return !(tweetBody.trim().length() == 0
+				|| tweetBody.trim().length() > 10);
 
-		return true;
 	}
 
 	@Override

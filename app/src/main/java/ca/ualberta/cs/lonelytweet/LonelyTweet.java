@@ -4,10 +4,14 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * Created by seneshen on 10/31/17.
- */
+// FIX 2: Removed default file template, added javadoc header:
 
+/**
+ * LonelyTweet is the super class that contains common functionality for different tweet types.
+ *
+ * @see NormalLonelyTweet
+ * @see ImportantLonelyTweet
+ */
 abstract class LonelyTweet implements Serializable {
     private static final long serialVersionUID = 1L;
     protected Date tweetDate;
